@@ -30,7 +30,7 @@ const Header = () => {
         ? 'bg-white/90 backdrop-blur-md shadow-lg'
         : 'bg-white/55 backdrop-blur-sm'
     }`}>
-      <nav className="container mx-auto px-6 sm:px-8 py-4 sm:py-6">
+      <nav className="container mx-auto px-4 sm:px-6 py-2 sm:py-3">
         <div className="flex items-center justify-between">
           {/* Logo + Texto */}
           <Link to="/home" className="flex items-center space-x-4">
@@ -42,7 +42,7 @@ const Header = () => {
             }`}
           />
             <div>
-              <h1 className="text-2xl sm:text-3xl font-bold text-neutral">Yachay Tech</h1>
+              <h1 className="text-xl sm:text-2xl font-bold text-neutral">Yachay Tech</h1>
             </div>
           </Link>
 
