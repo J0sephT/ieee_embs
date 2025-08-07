@@ -30,29 +30,29 @@ const Header = () => {
         ? 'bg-white/90 backdrop-blur-md shadow-md'
         : 'bg-white/60 backdrop-blur-sm'
     }`}>
-      <nav className="container mx-auto px-3 py-1">
+      <nav className="container mx-auto px-3 py-0.5"> {/* Menor altura */}
         <div className="flex items-center justify-between">
           {/* Logo + Texto */}
           <Link to="/home" className="flex items-center space-x-2">
             <img
               src="/ieee.png"
               alt="IEEE EMBS"
-              className={`w-10 h-10 object-contain transition-transform duration-300 ${
+              className={`w-8 h-8 object-contain transition-transform duration-300 ${
                 isScrolled ? 'scale-95' : 'scale-100'
               }`}
             />
-            <h1 className="text-sm sm:text-base font-semibold text-neutral">
+            <h1 className="text-xs sm:text-sm font-semibold text-neutral">
               Yachay Tech
             </h1>
           </Link>
 
           {/* Navegación escritorio */}
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-4">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm sm:text-base font-medium transition-colors relative group ${
+                className={`text-xs sm:text-sm font-medium transition-colors relative group ${
                   isActive(item.path)
                     ? 'text-primary'
                     : 'text-gray-800 hover:text-primary'
@@ -68,7 +68,7 @@ const Header = () => {
             ))}
             <Link
               to="/contact"
-              className="text-sm bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-md font-medium hover:from-hover hover:to-secondary transition transform hover:scale-105 shadow"
+              className="text-xs bg-gradient-to-r from-primary to-secondary text-white px-3 py-1.5 rounded-md font-medium hover:from-hover hover:to-secondary transition transform hover:scale-105 shadow"
             >
               Únete ahora
             </Link>
@@ -103,7 +103,7 @@ const Header = () => {
               ))}
               <Link
                 to="/contact"
-                className="text-sm bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-md font-medium mx-3 text-center"
+                className="text-xs bg-gradient-to-r from-primary to-secondary text-white px-3 py-1 rounded-md font-medium mx-3 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Únete ahora
