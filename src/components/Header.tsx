@@ -37,7 +37,7 @@ const Header = () => {
             <img
             src="/ieee.png"
             alt="IEEE EMBS"
-            className={`w-24 h-24 sm:w-30 sm:h-30 object-contain transition-transform duration-300 ease-in-out ${
+            className={`w-16 h-16 sm:w-20 sm:h-20 object-contain transition-transform duration-300 ease-in-out ${
               isScrolled ? 'scale-95' : 'scale-100'
             }`}
           />
